@@ -1,0 +1,41 @@
+{
+  "name": "generator-flight",
+  "version": "0.1.0",
+  "description": "Generator for scaffolding out a Flight web app",
+  "author": "Twitter Inc",
+  "main": "lib/generators/app/index.js",
+  "keywords": [
+    "app",
+    "flight",
+    "framework",
+    "generator",
+    "web",
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/twitter/generator-flight",
+  "bugs": "https://github.com/twitter/generator-flight/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twitter/generator-flight.git"
+  },
+  "scripts": {
+    "test": "mocha --no-colors --reporter spec"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.10.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "mocha": "~1.8.1",
+    "shelljs": "~0.1.2",
+    "semver": "~1.1.4"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

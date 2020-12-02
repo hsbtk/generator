@@ -1,0 +1,3 @@
+<% if (normalize && !bootstrap) { %>@import "/bower_components/normalize-css/normalize.css";<% } %>
+<% if (bootstrap) { %>@import "bootstrap.css";<% } %>
+<% if (bootstrap) { %>@import "bootstrap-responsive.css";<% } %>
