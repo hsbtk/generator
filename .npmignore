@@ -4,3 +4,4 @@
 ./.gitattributes
 ./CONTRIBUTING.md
 ./Gruntfile.js
+./test
