@@ -3,9 +3,9 @@
 [![Build Status](https://secure.travis-ci.org/twitter/generator-flight.png?branch=master)](http://travis-ci.org/twitter/generator-flight)
 
 Get up and running with everything you need to use Twitter's lightweight,
-JavaScript framework, [Flight](https://twitter.github.io/flight).
+JavaScript framework, [Flight](http://twitter.github.io/flight).
 
-This is a [Flight](https://twitter.github.io/flight) generator for
+This is a [Flight](http://twitter.github.io/flight) generator for
 [Yeoman](http://yeoman.io/). You also get access to several sub-generators
 which can be used to easily scaffold individual component, mixin, page, and
 spec files.
@@ -245,8 +245,8 @@ Node-based toolchain for your development workflow.
 
 **Optional**
 
-* [Twitter Bootstrap](https://twitter.github.io/bootstrap)
-* [Normalize.css](https://necolas.github.io/normalize.css)
+* [Twitter Bootstrap](http://twitter.github.io/bootstrap)
+* [Normalize.css](http://necolas.github.io/normalize.css)
 
 ### via npm
 
