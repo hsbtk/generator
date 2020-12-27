@@ -5,21 +5,10 @@ var helpers = require('yeoman-generator').test;
 var path = require('path');
 
 describe('Flight generator test', function () {
-  var flight;
-  var testGeneratorExpectedFiles;
 
   beforeEach(function (cb) {
-    var deps = [
-      '../../lib/generators/app',
-      '../../lib/generators/component',
-      '../../lib/generators/mixin',
-      '../../lib/generators/page'
-    ];
-
     helpers.testDirectory(path.join(__dirname, './temp'), function (err) {
       if (err) cb(err);
-      flight = helpers.createGenerator('flight:app', deps, ['myapp']);
-      flight.options['skip-install'] = true;
       cb();
     });
 
@@ -34,6 +23,15 @@ describe('Flight generator test', function () {
   });
 
   describe('flight:app', function () {
+    var flight;
+
+    beforeEach(function (cb) {
+      var deps = ['../../lib/generators/app'];
+      flight = helpers.createGenerator('flight:app', deps, ['fooapp']);
+      flight.options['skip-install'] = true;
+      cb();
+    });
+
     it('runs sucessfully', function () {
       flight.run();
     });
@@ -45,6 +43,7 @@ describe('Flight generator test', function () {
         '.gitignore',
         '.gitattributes',
         '.jshintrc',
+        '.travis.yml',
         // config files
         'bower.json',
         'karma.conf.js',
