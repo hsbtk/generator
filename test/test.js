@@ -22,6 +22,46 @@ describe('Flight generator test', function () {
     };
   });
 
+  describe('flight:package', function () {
+    var flightPackage;
+
+    beforeEach(function (cb) {
+      var deps = ['../../lib/generators/package'];
+      flightPackage = helpers.createGenerator('flight:package', deps, ['foo']);
+      flightPackage.options['skip-install'] = true;
+      cb();
+    });
+
+    it('runs sucessfully', function () {
+      flightPackage.run();
+    });
+
+    it('creates expected files', function (cb) {
+      var expected = [
+        // dotfiles
+        '.bowerrc',
+        '.gitignore',
+        '.gitattributes',
+        '.jshintrc',
+        // config files
+        'bower.json',
+        'karma.conf.js',
+        'package.json',
+        // docs
+        'CHANGELOG.md',
+        'CONTRIBUTING.md',
+        'README.md',
+        // app
+        'lib/foo.js',
+        // test
+        'test/test-main.js',
+        'test/spec/foo.spec.js'
+      ];
+
+      helpers.assertGeneratorMakesExpected(flightPackage, expected, cb);
+    });
+  });
+
   describe('flight:app', function () {
     var flight;
 
