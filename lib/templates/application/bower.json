@@ -1,5 +1,5 @@
 {
-  "name": "<%= appname %>",
+  "name": "<%= name %>",
   "version": "0.0.0",
   "dependencies": {
     "es5-shim": "~2.0.0",

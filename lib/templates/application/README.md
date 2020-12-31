@@ -1,4 +1,4 @@
-# <%= appname %>
+# <%= name %>
 
 ## Contributing to this project
 

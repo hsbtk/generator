@@ -1,5 +1,5 @@
 {
-  "name": "<%= appname %>",
+  "name": "<%= name %>",
   "version": "0.0.0",
   "devDependencies": {
     "generator-flight": "~<%= genVersion %>",
