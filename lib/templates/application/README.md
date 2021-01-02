@@ -1,4 +1,4 @@
-# <%= name %>
+# flight-<%= name %>
 
 ## Contributing to this project
 

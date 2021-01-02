@@ -1,0 +1,10 @@
+{
+  "name": "flight-<%= name %>",
+  "version": "0.0.0",
+  "devDependencies": {
+    "karma": "~0.8.5"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  }
+}

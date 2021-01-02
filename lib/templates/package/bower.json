@@ -1,0 +1,21 @@
+{
+  "name": "flight-<%= name %>",
+  "version": "0.0.0",
+  "dependencies": {
+    "flight": "~1.0.9"
+  },
+  "devDependencies": {
+    "flight-jasmine": "*",
+    "jasmine-jquery": "*"
+  },
+  "ignore": [
+    ".gitignore",
+    ".gitattributes",
+    ".travis.yml",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "test",
+    "package.json",
+    "karma.conf.js"
+  ]
+}
