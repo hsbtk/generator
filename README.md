@@ -6,9 +6,9 @@ Get up and running with everything you need to use Twitter's lightweight,
 JavaScript framework, [Flight](http://twitter.github.io/flight).
 
 This is a [Flight](http://twitter.github.io/flight) generator for
-[Yeoman](http://yeoman.io/). You also get access to several sub-generators
-which can be used to easily scaffold individual component, mixin, page, and
-spec files.
+[Yeoman](http://yeoman.io/). It provides several sub-generators to easily
+scaffold component, mixin, page, and spec files for applications or standalone
+packages.
 
 
 ## Recommended setup
@@ -31,30 +31,37 @@ Make a new directory, and `cd` into it:
 mkdir flight-app && cd $_
 ```
 
-Now generate a Flight-based application using the `yo` command (and optionally
-passing a name for your application):
+You're now ready to generate an app or package!
+
+
+## Main generators
+
+To generate a Flight-based application:
 
 ```
 yo flight <app-name>
 ```
 
-You will be prompted to install optional CSS libraries you might like to use:
-[Twitter Bootstrap](http://twitter.github.io/bootstrap) or just
-[Normalize.css](http://necolas.github.io/normalize.css).
+To generate a standalone Flight component as a package:
+
+```
+yo flight:package <package-name>
+```
 
 **N.B.** All your Node and client-side dependencies will be installed automatically
 unless you include the `--skip-install` option.
 
 
-## Generators
+## All generators and their output
 
-Available generators (to be run in the root directory of the application).
+Available generators (to be run in the root directory of a project).
 
 * `flight <app-name>` (aka `flight:app`)
 * `flight:component <component-name>`
 * `flight:mixin <mixin-name>`
 * `flight:page <page-name>`
 * `flight:all`
+* `flight:package <package-name>`
 
 ### flight:app
 
@@ -84,8 +91,6 @@ Produces:
 │   ├── img
 │   ├── js
 │   │   ├── component
-│   │   │   ├── my_component.js
-│   │   │   └── with_my_mixin.js
 │   │   ├── page
 │   │   │   └── default.js
 │   │   └── main.js
@@ -97,8 +102,6 @@ Produces:
 ├── test
 │   ├── spec
 │   │   └── component
-│   │       ├── my_component.spec.js
-│   │       └── with_my_mixin.spec.js
 │   └── test-main.js
 ├── .bowerrc
 ├── .gitattributes
@@ -112,6 +115,25 @@ Produces:
 ├── karma.conf.js
 └── package.json
 ```
+
+#### Locally installed software
+
+Automatically installs all the Flight framework dependencies, and sets up a
+Node-based toolchain for your development workflow.
+
+**via Bower**
+
+* [Flight](http://twitter.github.com/flight) (and its dependencies: ES5 Shim, jQuery)
+* [RequireJS](http://requirejs.org/)
+* [Jasmine jQuery](https://github.com/velesin/jasmine-jquery) extensions
+* [Jasmine Flight](https://github.com/twitter/flight-jasmine) extensions
+* (optional) [Twitter Bootstrap](http://twitter.github.io/bootstrap)
+* (optional) [Normalize.css](http://necolas.github.io/normalize.css)
+
+**via npm**
+
+* Flight generator (installed as a local dependency)
+* [Karma](http://karma-runner.github.io/) unit test runner
 
 ### flight:component
 
@@ -228,37 +250,66 @@ define(function (require) {
 Shortcut that runs `flight:app`, `flight:component my_component`, and
 `flight:mixin my_component`.
 
+### flight:package
 
-## Locally installed software
+Flight makes it easy to create, share, and depend on standalone Flight
+components, e.g., [flight-storage](https://github.com/cameronhunter/flight-storage).
+The `package` generator is designed to setup everything you need to create a
+Flight component suitable for registration with the Bower package manager.
+
+Example:
+
+```
+yo flight:package foo
+```
+
+Produces a package named `flight-foo` with the following output:
+
+```
+.
+├── bower_components
+├── lib
+│   └── foo.js
+├── node_modules
+├── test
+│   ├── spec
+│   │   └── foo.spec.js
+│   └── test-main.js
+├── .bowerrc
+├── .gitattributes
+├── .gitignore
+├── .jshintrc
+├── .travis.yml
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE.md
+├── README.md
+├── bower.json
+├── karma.conf.js
+└── package.json
+```
+
+#### Locally installed software
 
 Automatically installs all the Flight framework dependencies, and sets up a
 Node-based toolchain for your development workflow.
 
-### via Bower
+**via Bower**
 
-* [jQuery](http://jquery.com)
-* [ES5 Shim](https://github.com/kriskowal/es5-shim)
-* [RequireJS](http://requirejs.org/)
-* [Flight](http://twitter.github.com/flight)
+* [Flight](http://twitter.github.com/flight) (and its dependencies: ES5 Shim, jQuery)
 * [Jasmine jQuery](https://github.com/velesin/jasmine-jquery) extensions
 * [Jasmine Flight](https://github.com/twitter/flight-jasmine) extensions
 
-**Optional**
+**via npm**
 
-* [Twitter Bootstrap](http://twitter.github.io/bootstrap)
-* [Normalize.css](http://necolas.github.io/normalize.css)
-
-### via npm
-
-* Flight generator (installed as a local dependency)
-* [Karma](http://karma-runner.github.io/) Test Runner
+* [Karma](http://karma-runner.github.io/) unit test runner
 
 
-## Running your app's tests
+## Running your app or package's tests
 
-The generated app uses a local installation of Karma to run the Jasmine tests.
-When you have Karma globally installed, it's easy to run and then watch your
-unit tests in Chrome and Firefox:
+The generated app or package uses a local installation of Karma to run the unit
+tests.  When you have Karma globally installed, it's easy to run and then watch
+your unit tests in Chrome and Firefox:
 
 ```
 karma start
