@@ -22,7 +22,7 @@
     "test": "mocha --no-colors --reporter spec"
   },
   "dependencies": {
-    "yeoman-generator": "~0.11.x"
+    "yeoman-generator": "~0.12.0"
   },
   "devDependencies": {
     "grunt": "~0.4.0",
