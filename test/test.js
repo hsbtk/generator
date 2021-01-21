@@ -13,7 +13,9 @@ describe('Flight generator test', function () {
     });
 
     helpers.assertGeneratorMakesExpected = function (generator, expected, cb) {
-      helpers.mockPrompt(generator, {'normalize': 'Y'});
+      helpers.mockPrompt(generator, {
+        'normalize': 'Y'
+      });
 
       generator.run([], function () {
         helpers.assertFiles(expected);
@@ -51,6 +53,7 @@ describe('Flight generator test', function () {
         // docs
         'CHANGELOG.md',
         'CONTRIBUTING.md',
+        //'LICENSE.md',
         'README.md',
         // app
         'app/404.html',
@@ -164,6 +167,7 @@ describe('Flight generator test', function () {
         // docs
         'CHANGELOG.md',
         'CONTRIBUTING.md',
+        //'LICENSE.md',
         'README.md',
         // app
         'lib/foo.js',
