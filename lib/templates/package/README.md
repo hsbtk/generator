@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/<username>/flight-<%= name %>.png)](http://travis-ci.org/<username>/flight-<%= name %>)
 
-A [Flight](https://github.com/twitter/flight) component for…
+A [Flight](https://github.com/flightjs/flight) component for…
 
 ## Installation
 

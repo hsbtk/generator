@@ -7,7 +7,7 @@
     "normalize-css": "~2.1.0"<% } %>
   },
   "devDependencies": {
-    "flight-jasmine": "~1.0.0",
-    "jasmine-jquery": "~1.5.0"
+    "jasmine-flight": "*",
+    "jasmine-jquery": "*"
   }
 }

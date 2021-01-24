@@ -5,7 +5,7 @@
     "flight": "~1.0.9"
   },
   "devDependencies": {
-    "flight-jasmine": "*",
+    "jasmine-flight": "*",
     "jasmine-jquery": "*"
   },
   "ignore": [

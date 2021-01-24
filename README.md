@@ -1,11 +1,11 @@
 # Flight generator
 
-[![Build Status](https://secure.travis-ci.org/twitter/generator-flight.png?branch=master)](http://travis-ci.org/twitter/generator-flight)
+[![Build Status](https://secure.travis-ci.org/flightjs/generator-flight.png?branch=master)](http://travis-ci.org/flightjs/generator-flight)
 
 Get up and running with everything you need to use Twitter's lightweight,
-JavaScript framework, [Flight](http://twitter.github.io/flight).
+JavaScript framework, [Flight](http://flightjs.github.io/).
 
-This is a [Flight](http://twitter.github.io/flight) generator for
+This is a [Flight](http://flightjs.github.io/) generator for
 [Yeoman](http://yeoman.io/). It provides several sub-generators to easily
 scaffold component, mixin, page, and spec files for applications or standalone
 packages.
@@ -83,7 +83,7 @@ Produces:
 │   ├── bower_components
 │   │   ├── es5-shim
 │   │   ├── flight
-│   │   ├── flight-jasmine
+│   │   ├── jasmine-flight
 │   │   ├── jquery
 │   │   └── requirejs
 │   ├── css
@@ -123,10 +123,10 @@ Node-based toolchain for your development workflow.
 
 **via Bower**
 
-* [Flight](http://twitter.github.com/flight) (and its dependencies: ES5 Shim, jQuery)
+* [Flight](http://flightjs.github.io/) (and its dependencies: ES5 Shim, jQuery)
 * [RequireJS](http://requirejs.org/)
 * [Jasmine jQuery](https://github.com/velesin/jasmine-jquery) extensions
-* [Jasmine Flight](https://github.com/twitter/flight-jasmine) extensions
+* [Jasmine Flight](https://github.com/flightjs/jasmine-flight) extensions
 * (optional) [Twitter Bootstrap](http://twitter.github.io/bootstrap)
 * (optional) [Normalize.css](http://necolas.github.io/normalize.css)
 
@@ -296,9 +296,9 @@ Node-based toolchain for your development workflow.
 
 **via Bower**
 
-* [Flight](http://twitter.github.com/flight) (and its dependencies: ES5 Shim, jQuery)
+* [Flight](http://flightjs.github.io/) (and its dependencies: ES5 Shim, jQuery)
 * [Jasmine jQuery](https://github.com/velesin/jasmine-jquery) extensions
-* [Jasmine Flight](https://github.com/twitter/flight-jasmine) extensions
+* [Jasmine Flight](https://github.com/flightjs/jasmine-flight) extensions
 
 **via npm**
 
