@@ -12,8 +12,8 @@
     "web",
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/twitter/generator-flight",
-  "bugs": "https://github.com/twitter/generator-flight/issues",
+  "homepage": "https://github.com/flightjs/generator-flight",
+  "bugs": "https://github.com/flightjs/generator-flight/issues",
   "repository": {
     "type": "git",
     "url": "git://github.com/twitter/generator-flight.git"
