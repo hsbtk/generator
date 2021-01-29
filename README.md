@@ -318,7 +318,8 @@ karma start
 This is the recommended approach because the moment your unit tests start
 failing, you'll be notified in the terminal.
 
-To run your unit tests just once (for CI), you can simply run:
+To run your unit tests just once in PhantomJS (for CI), you must install
+PhantomJS and the run:
 
 ```
 npm test
