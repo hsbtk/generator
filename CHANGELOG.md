@@ -1,5 +1,12 @@
 === HEAD
 
+* Update paths to `jasmine-flight`.
+* Add MIT License to scaffolds.
+* Add `bower_components` to application `.gitignore`.
+* Update Yeoman prompt code.
+* Update to Yeoman Generator 0.12.
+* Update `flight:app` Bower dependencies.
+
 === 0.2.0 (May 30, 2013)
 
 * Add `flight:package` generator
