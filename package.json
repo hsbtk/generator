@@ -1,6 +1,6 @@
 {
   "name": "generator-flight",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Generator for scaffolding out a Flight web app",
   "author": "Twitter Inc",
   "main": "lib/generators/app/index.js",
@@ -16,7 +16,7 @@
   "bugs": "https://github.com/flightjs/generator-flight/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/twitter/generator-flight.git"
+    "url": "git://github.com/flightjs/generator-flight.git"
   },
   "scripts": {
     "test": "mocha --no-colors --reporter spec"

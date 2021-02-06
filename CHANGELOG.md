@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.2.1 (July 8, 2013)
+
 * Update paths to `jasmine-flight`.
 * Add MIT License to scaffolds.
 * Add `bower_components` to application `.gitignore`.
