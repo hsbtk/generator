@@ -25,10 +25,7 @@
     "yeoman-generator": "~0.12.2"
   },
   "devDependencies": {
-    "grunt": "~0.4.0",
-    "mocha": "~1.8.1",
-    "shelljs": "~0.1.2",
-    "semver": "~1.1.4"
+    "mocha": "~1.8.1"
   },
   "engines": {
     "node": ">=0.8.0"
