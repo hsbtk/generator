@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.3.0 (July 12, 2013)
+
 * Move the `flight:package` generator into a seperate module.
 
 === 0.2.1 (July 8, 2013)
