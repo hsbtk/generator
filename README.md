@@ -15,13 +15,14 @@ scaffold component, mixin, page, and spec files for applications.
 Install [Node.js](http://nodejs.org/) (which comes with npm). It's best to have
 npm version 1.2.x or above installed.
 
-Install [Bower](http://bower.io/), [Karma](http://karma-runner.github.io/),
-[Yo](http://yeoman.io/), and the Flight generator. These tools will help fetch
-and manage your dependencies, generate the boilerplate Flight application, and
-run your Jasmine unit tests.
+Next, globally install the Flight generator. This will automatically install
+[Bower](http://bower.io/), [Yo](http://yeoman.io/), and
+[Karma](http://karma-runner.github.io/) as global dependencies. These tools
+will help fetch and manage your dependencies, generate the boilerplate Flight
+application, and run your Jasmine unit tests.
 
 ```
-npm install -g bower karma yo generator-flight
+npm install -g generator-flight
 ```
 
 Make a new directory, and `cd` into it:
@@ -41,8 +42,8 @@ To generate a Flight-based application:
 yo flight <app-name>
 ```
 
-**N.B.** All your Node and client-side dependencies will be installed automatically
-unless you include the `--skip-install` option.
+**N.B.** All your Node and client-side dependencies will be installed
+automatically (using Bower) unless you include the `--skip-install` option.
 
 
 ## All generators and their output
@@ -246,8 +247,8 @@ Shortcut that runs `flight:app`, `flight:component my_component`, and
 ## Running your app's tests
 
 The generated app uses a local installation of Karma to run the unit tests.
-When you have Karma globally installed, it's easy to run and then watch your
-unit tests in Chrome and Firefox:
+Karma makes it easy to run and automatically re-run your unit tests in real
+browsers:
 
 ```
 karma start
@@ -257,7 +258,7 @@ This is the recommended approach because the moment your unit tests start
 failing, you'll be notified in the terminal.
 
 To run your unit tests just once in PhantomJS (for CI), you must install
-PhantomJS and the run:
+PhantomJS and then run:
 
 ```
 npm test
