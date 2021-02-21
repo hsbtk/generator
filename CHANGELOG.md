@@ -1,5 +1,8 @@
 === HEAD
 
+* Specify `yo` and `karma` as peerDependencies.
+* Update to Flight 1.1.x.
+
 === 0.3.0 (July 12, 2013)
 
 * Move the `flight:package` generator into a seperate module.
