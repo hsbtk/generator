@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.4.0 (August 6, 2013)
+
 * Specify `yo` and `karma` as peerDependencies.
 * Update to Flight 1.1.x.
 
