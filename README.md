@@ -31,7 +31,7 @@ Make a new directory, and `cd` into it:
 mkdir flight-app && cd $_
 ```
 
-You're now ready to generate an app or package!
+You're now ready to generate an app!
 
 
 ## Main generator
