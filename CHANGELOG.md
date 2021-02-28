@@ -1,5 +1,7 @@
 === HEAD
 
+* Fix path to debug module in generated app's `main.js` file.
+
 === 0.4.0 (August 6, 2013)
 
 * Specify `yo` and `karma` as peerDependencies.
