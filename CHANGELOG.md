@@ -1,5 +1,7 @@
 === HEAD
 
+* Add new Google Analytics snippet.
+
 === 0.4.1 (August 6, 2013)
 
 * Fix path to debug module in generated app's `main.js` file.
