@@ -1,5 +1,6 @@
 === HEAD
 
+* Upgrade generated app to use Karma 0.10.x.
 * Add new Google Analytics snippet.
 
 === 0.4.1 (August 6, 2013)
