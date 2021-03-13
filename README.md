@@ -2,12 +2,16 @@
 
 [![Build Status](https://secure.travis-ci.org/flightjs/generator-flight.png?branch=master)](http://travis-ci.org/flightjs/generator-flight)
 
-Get up and running with everything you need to use Twitter's lightweight,
-JavaScript framework, [Flight](http://flightjs.github.io/).
+Get up and running with everything you need to create an application using
+Twitter's lightweight, JavaScript framework,
+[Flight](http://flightjs.github.io/).
 
-This is a [Flight](http://flightjs.github.io/) generator for
-[Yeoman](http://yeoman.io/). It provides several sub-generators to easily
-scaffold component, mixin, page, and spec files for applications.
+This is a [Yeoman](http://yeoman.io/) generator for
+[Flight](http://flightjs.github.io/). It provides several sub-generators to
+easily scaffold component, mixin, page, and spec files for applications.
+
+NOTE: A separate [Flight package generator](https://github.com/flightjs/flight)
+is available for creating standalone Flight components.
 
 
 ## Recommended setup
