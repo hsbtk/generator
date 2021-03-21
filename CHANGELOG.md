@@ -1,5 +1,7 @@
 === HEAD
 
+* Upgrade `yo` and `yeoman-generator` dependencies to fix compatibility issue.
+
 === 0.5.0 (August 26, 2013)
 
 * Upgrade generated app to use Karma 0.10.x.
