@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.5.1 (August 28, 2013)
+
 * Upgrade `yo` and `yeoman-generator` dependencies to fix compatibility issue.
 
 === 0.5.0 (August 26, 2013)
