@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.5.2 (August 30, 2013)
+
 * Fix installation of Boostrap toolkit.
 
 === 0.5.1 (August 28, 2013)
