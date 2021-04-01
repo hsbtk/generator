@@ -10,7 +10,7 @@ This is a [Yeoman](http://yeoman.io/) generator for
 [Flight](http://flightjs.github.io/). It provides several sub-generators to
 easily scaffold component, mixin, page, and spec files for applications.
 
-NOTE: A separate [Flight package generator](https://github.com/flightjs/flight)
+NOTE: A separate [Flight package generator](https://github.com/flightjs/generator-flight-package)
 is available for creating standalone Flight components.
 
 
