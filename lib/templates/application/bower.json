@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "dependencies": {
     "flight": "~1.1.0",
-    "requirejs": "~2.1.5"<% if (normalize && !bootstrap) { %>,
-    "normalize-css": "~2.1.0"<% } %>
+    "requirejs": "~2.1.5"<% if (normalize) { %>,
+    "normalize-css": "~2.1.0"<% } %><% if (bootstrap) { %>,
+    "components-bootstrap": "~3.0.0"<% } %>
   },
   "devDependencies": {
     "jasmine-flight": "*",

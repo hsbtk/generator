@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><%= name %></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width"><% if (bootstrap) { %>
+    <link rel="stylesheet" href="/bower_components/components-bootstrap/css/bootstrap.min.css"><% } %><% if (bootstrapTheme) { %>
+    <link rel="stylesheet" href="/bower_components/components-bootstrap/css/bootstrap-theme.min.css"><% } %><% if (normalize) { %>
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css"><% } %>
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -16,17 +19,19 @@
     <script src="/bower_components/es5-shim/es5-shim.js"></script>
     <script src="/bower_components/es5-shim/es5-sham.js"></script>
     <![endif]-->
-    <script src="/bower_components/jquery/jquery.js"></script>
-    <script src="/bower_components/requirejs/require.js" data-main="/js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script src="/bower_components/jquery/jquery.js"></script><% if (bootstrap) { %>
+    <script src="/bower_components/components-bootstrap/js/bootstrap.min.js"></script><% } %>
+    <script src="/bower_components/requirejs/require.js" data-main="js/main.js"></script>
+<% if (analytics) { %>
+    <!-- Google Analytics -->
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','<%= analyticsCode %>');ga('send','pageview');
     </script>
+<% } %>
   </body>
 </html>
