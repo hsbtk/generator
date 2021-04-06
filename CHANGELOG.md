@@ -1,5 +1,8 @@
 === HEAD
 
+* Install Bootstrap 3 via the "components" shim package.
+* Add more generator options: Bootstrap theme and Google Analytics.
+
 === 0.5.2 (August 30, 2013)
 
 * Fix installation of Boostrap toolkit.
