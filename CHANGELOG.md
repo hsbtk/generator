@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.6.0 (November 1, 2013)
+
 * Install Bootstrap 3 via the "components" shim package.
 * Add more generator options: Bootstrap theme and Google Analytics.
 
