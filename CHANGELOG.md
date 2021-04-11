@@ -1,5 +1,7 @@
 === HEAD
 
+* Specify a version range for `jasmine-jquery` and `jasmine-flight`.
+
 === 0.6.0 (November 1, 2013)
 
 * Install Bootstrap 3 via the "components" shim package.

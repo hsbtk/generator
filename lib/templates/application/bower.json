@@ -8,7 +8,7 @@
     "components-bootstrap": "~3.0.0"<% } %>
   },
   "devDependencies": {
-    "jasmine-flight": "*",
-    "jasmine-jquery": "*"
+    "jasmine-flight": "~2.1.0",
+    "jasmine-jquery": "~1.7.0"
   }
 }
