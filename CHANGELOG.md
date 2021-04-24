@@ -1,5 +1,7 @@
 === HEAD
 
+* Fix duplicate logging in generated app scaffold.
+* Use valid `hookFor` signature.
 * Specify a version range for `jasmine-jquery` and `jasmine-flight`.
 
 === 0.6.0 (November 1, 2013)
