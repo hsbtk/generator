@@ -1,5 +1,7 @@
 === HEAD
 
+* Update `jasmine-flight` to 2.2.x.
+
 === 0.6.1 (January 15, 2014)
 
 * Fix duplicate logging in generated app scaffold.
