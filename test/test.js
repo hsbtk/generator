@@ -76,7 +76,7 @@ describe('Flight generator test', function () {
 
     beforeEach(function (cb) {
       var deps = ['../../lib/generators/component'];
-      flightComponent = helpers.createGenerator('flight:component', deps, ['foo']);
+      flightComponent = helpers.createGenerator('flight:component', deps, ['my_component']);
       cb();
     });
 
@@ -86,8 +86,8 @@ describe('Flight generator test', function () {
 
     it('creates expected files', function (cb) {
       var expected = [
-        ['app/js/component/foo.js', /function foo()/],
-        ['test/spec/component/foo.spec.js', /describeComponent\('component\/foo/]
+        ['app/js/component/my_component.js', /function myComponent()/],
+        ['test/spec/component/my_component.spec.js', /describeComponent\('component\/my_component/]
       ];
 
       helpers.assertGeneratorMakesExpected(flightComponent, expected, cb);
@@ -99,7 +99,7 @@ describe('Flight generator test', function () {
 
     beforeEach(function (cb) {
       var deps = ['../../lib/generators/mixin'];
-      flightMixin = helpers.createGenerator('flight:mixin', deps, ['foo']);
+      flightMixin = helpers.createGenerator('flight:mixin', deps, ['my_mixin']);
       cb();
     });
 
@@ -109,8 +109,8 @@ describe('Flight generator test', function () {
 
     it('creates expected files', function (cb) {
       var expected = [
-        ['app/js/component/with_foo.js', /function withFoo()/],
-        ['test/spec/component/with_foo.spec.js', /describeMixin\('component\/with_foo/]
+        ['app/js/component/with_my_mixin.js', /function withMyMixin()/],
+        ['test/spec/component/with_my_mixin.spec.js', /describeMixin\('component\/with_my_mixin/]
       ];
 
       helpers.assertGeneratorMakesExpected(flightMixin, expected, cb);
