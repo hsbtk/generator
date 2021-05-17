@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "devDependencies": {
     "generator-flight": "~<%= genVersion %>",
+    "gulp": "~3.4.0",
+    "gulp-livereload": "~0.2.0",
     "karma": "~0.10.0",
     "karma-jasmine": "~0.1.0",
     "karma-requirejs": "~0.1.0",
@@ -10,9 +12,15 @@
     "karma-ie-launcher": "~0.1.1",
     "karma-firefox-launcher": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
-    "karma-safari-launcher": "~0.1.1"
+    "karma-safari-launcher": "~0.1.1",
+    "node-static": "~0.7.3",
+    "tiny-lr": "0.0.5"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+    "livereload": "gulp",
+    "server": "static app",
+    "test": "karma start --single-run --browsers PhantomJS",
+    "watch": "npm run server > server.log & npm run livereload",
+    "watch-test": "karma start"
   }
 }

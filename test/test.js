@@ -48,6 +48,7 @@ describe('Flight generator test', function () {
         '.travis.yml',
         // config files
         'bower.json',
+        'gulpfile.js',
         'karma.conf.js',
         'package.json',
         // docs
