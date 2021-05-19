@@ -2,13 +2,10 @@
 
 [![Build Status](https://secure.travis-ci.org/flightjs/generator-flight.png?branch=master)](http://travis-ci.org/flightjs/generator-flight)
 
-Get up and running with everything you need to create an application using
-Twitter's lightweight, JavaScript framework,
-[Flight](http://flightjs.github.io/).
-
-This is a [Yeoman](http://yeoman.io/) generator for
-[Flight](http://flightjs.github.io/). It provides several sub-generators to
-easily scaffold component, mixin, page, and spec files for applications.
+A [Yeoman](http://yeoman.io/) generator for
+[Flight](http://flightjs.github.io/), Twitter's client-side JavaScript
+framework. Get up and running with everything you need to create an
+application.
 
 NOTE: A separate [Flight package generator](https://github.com/flightjs/generator-flight-package)
 is available for creating standalone Flight components.
@@ -47,7 +44,7 @@ yo flight <app-name>
 ```
 
 **N.B.** All your Node and client-side dependencies will be installed
-automatically (using Bower) unless you include the `--skip-install` option.
+automatically unless you include the `--skip-install` option.
 
 
 ## All generators and their output
@@ -97,8 +94,6 @@ Produces:
 │   └── robots.txt
 ├── node_modules
 ├── test
-│   ├── spec
-│   │   └── component
 │   └── test-main.js
 ├── .bowerrc
 ├── .gitattributes
@@ -109,6 +104,7 @@ Produces:
 ├── LICENSE.md
 ├── README.md
 ├── bower.json
+├── gulpfile.js
 ├── karma.conf.js
 └── package.json
 ```
@@ -130,6 +126,7 @@ Node-based toolchain for your development workflow.
 **via npm**
 
 * Flight generator (installed as a local dependency)
+* [Gulp](http://gulpjs.com/) task runner
 * [Karma](http://karma-runner.github.io/) unit test runner
 
 ### flight:component
@@ -212,9 +209,7 @@ describeMixin('component/with_tweet_box', function () {
     expect(this.component).toBeDefined();
   });
 
-  it('should do something', function () {
-    expect(true).toBe(false);
-  });
+  it('should do something');
 });
 ```
 
@@ -248,28 +243,10 @@ Shortcut that runs `flight:app`, `flight:component my_component`, and
 `flight:mixin my_component`.
 
 
-## Running your app's tests
+## Developing your application
 
-The generated app uses a local installation of Karma to run the unit tests.
-Karma makes it easy to run and automatically re-run your unit tests in real
-browsers:
-
-```
-karma start
-```
-
-This is the recommended approach because the moment your unit tests start
-failing, you'll be notified in the terminal.
-
-To run your unit tests just once in PhantomJS (for CI), you must install
-PhantomJS and then run:
-
-```
-npm test
-```
-
-For further information about configuring Karma, please refer to the [Karma
-website](http://karma-runner.github.io/).
+The [generated application's README](lib/templates/application/README.md)
+contains instructions on how to run the tests, server, and other tasks.
 
 
 ## Contributing to this project
