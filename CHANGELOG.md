@@ -1,6 +1,11 @@
 === HEAD
 
-* Update `jasmine-flight` to 2.2.x.
+* Add LiveReload support.
+* Add a development server.
+* Fix filenames of placeholder component/mixin created by `flight:all`.
+* Improve Karma configuration.
+* Make `bower_components` the base path for requirejs.
+* Fix generated test setup by updating `jasmine-flight` to 2.2.x.
 
 === 0.6.1 (January 15, 2014)
 
