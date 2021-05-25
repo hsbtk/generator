@@ -17,10 +17,9 @@ Install [Node.js](http://nodejs.org/) (which comes with npm). It's best to have
 npm version 1.2.x or above installed.
 
 Next, globally install the Flight generator. This will automatically install
-[Bower](http://bower.io/), [Yo](http://yeoman.io/), and
-[Karma](http://karma-runner.github.io/) as global dependencies. These tools
-will help fetch and manage your dependencies, generate the boilerplate Flight
-application, and run your Jasmine unit tests.
+[Bower](http://bower.io/) and [Yo](http://yeoman.io/) as global dependencies.
+These tools will help manage your dependencies and generate the boilerplate
+Flight application.
 
 ```
 npm install -g generator-flight
@@ -66,7 +65,7 @@ prompt you to optionally install Twitter Bootstrap or Normalize.css.
 Example:
 
 ```
-yo flight
+yo flight my_app
 ```
 
 Produces:
@@ -128,6 +127,7 @@ Node-based toolchain for your development workflow.
 * Flight generator (installed as a local dependency)
 * [Gulp](http://gulpjs.com/) task runner
 * [Karma](http://karma-runner.github.io/) unit test runner
+* [Node-Static](https://github.com/cloudhead/node-static/) file server
 
 ### flight:component
 
