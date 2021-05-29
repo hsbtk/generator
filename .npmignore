@@ -1,7 +1,3 @@
-./.npmignore
-./.travis.yml
-./.jshintrc
-./.gitattributes
+.*
 ./CONTRIBUTING.md
-./Gruntfile.js
 ./test

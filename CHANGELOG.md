@@ -1,5 +1,6 @@
 === HEAD
 
+* Update `yeoman-generator` to 0.16.x.
 * Add LiveReload support.
 * Add a development server.
 * Fix filenames of placeholder component/mixin created by `flight:all`.
