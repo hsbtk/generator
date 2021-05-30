@@ -240,7 +240,7 @@ define(function (require) {
 ### flight:all
 
 Shortcut that runs `flight:app`, `flight:component my_component`, and
-`flight:mixin my_component`.
+`flight:mixin my_mixin`.
 
 
 ## Developing your application
