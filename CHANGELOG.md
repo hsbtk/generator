@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.7.0 (January 18, 2014)
+
 * Update `yeoman-generator` to 0.16.x.
 * Add LiveReload support.
 * Add a development server.
