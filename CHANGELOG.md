@@ -1,5 +1,9 @@
 === HEAD
 
+=== 0.7.1 (January 23, 2014)
+
+* Require Node >= 0.10.
+
 === 0.7.0 (January 18, 2014)
 
 * Update `yeoman-generator` to 0.16.x.
