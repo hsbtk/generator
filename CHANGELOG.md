@@ -1,5 +1,9 @@
 === HEAD
 
+* Fix path to jQuery in Karma config and index.html.
+* Install jQuery 2.x.x in generated app.
+* Install Bootstrap 3.x.x and Normalize.css 3.x.x in generated app.
+
 === 0.7.1 (January 23, 2014)
 
 * Require Node >= 0.10.
