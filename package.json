@@ -1,6 +1,6 @@
 {
   "name": "generator-flight",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Generator for scaffolding out a Flight web app",
   "author": "Twitter Inc",
   "main": "lib/generators/app/index.js",
