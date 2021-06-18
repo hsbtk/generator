@@ -60,7 +60,7 @@ Available generators (to be run in the root directory of a project).
 
 Scaffolds a Flight application file structure, installs all the library code
 you need, and correctly configures your test setup. The app generator will
-prompt you to optionally install Twitter Bootstrap or Normalize.css.
+prompt you to optionally install Bootstrap or Normalize.css.
 
 Example:
 
@@ -119,7 +119,7 @@ Node-based toolchain for your development workflow.
 * [RequireJS](http://requirejs.org/)
 * [Jasmine jQuery](https://github.com/velesin/jasmine-jquery) extensions
 * [Jasmine Flight](https://github.com/flightjs/jasmine-flight) extensions
-* (optional) [Twitter Bootstrap](http://twitter.github.io/bootstrap)
+* (optional) [Bootstrap](http://getbootstrap.com/)
 * (optional) [Normalize.css](http://necolas.github.io/normalize.css)
 
 **via npm**
