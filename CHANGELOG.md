@@ -1,5 +1,9 @@
 === HEAD
 
+=== 0.7.3 (May 17, 2014)
+
+* Fix path to RequireJS for Karma.
+
 === 0.7.2 (February 21, 2014)
 
 * Fix path to jQuery in Karma config and index.html.
