@@ -148,7 +148,7 @@ define(function (require) {
   return defineComponent(tweetBox);
 
   function tweetBox() {
-    this.defaultAttrs({});
+    this.attributes({});
     this.after('initialize', function () {});
   }
 });
@@ -160,7 +160,7 @@ And the test file `test/spec/component/tweet_box.spec.js`:
 describeComponent('component/tweet_box', function () {
   // Initialize the component and attach it to the DOM
   beforeEach(function () {
-    setupComponent();
+    this.setupComponent();
   });
 
   it('should be defined', function () {
@@ -190,7 +190,7 @@ define(function (require) {
   return withTweetActions;
 
   function withTweetActions() {
-    this.defaultAttrs({});
+    this.attributes({});
     this.after('initialize', function () {});
   }
 });
@@ -202,7 +202,7 @@ And the test file `test/spec/component/with_tweet_box.spec.js`:
 describeMixin('component/with_tweet_box', function () {
   // Initialize the component and attach it to the DOM
   beforeEach(function () {
-    setupComponent();
+    this.setupComponent();
   });
 
   it('should be defined', function () {
